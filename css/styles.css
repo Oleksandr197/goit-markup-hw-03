@@ -192,7 +192,6 @@ ul {
 .box {
   display: flex;
   align-items: center;
-  text-align: center;
 }
 .box .item:not(:last-child) {
   margin-right: 30px;
@@ -251,6 +250,7 @@ ul {
 }
 
 .team-title {
+  margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -262,6 +262,7 @@ ul {
   color: var(--secondary-text-color);
 }
 .team-text {
+  margin-bottom: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -275,22 +276,39 @@ ul {
 .bg-color {
   width: 270px;
   height: 422px;
+
   background-color: var(--primary-white);
 }
 .team-info {
-  height: 162;
+  height: 162px;
   padding-top: 30px;
   padding-bottom: 24px;
+}
+.list-links {
+  width: 206px;
+  height: 44px;
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.img {
+  width: 44px;
+  height: 44px;
+  border-radius: 20px;
+  background-color: skyblue;
+}
+.list-links .item:not(:last-child) {
+  margin-right: 10px;
 }
 /* Footer */
 .footer {
   height: 290px;
-  background-color: #2f303a;
+  background-color: #757575;
   /*  #2F303A */
 }
 .footer-cont {
   display: flex;
-  justify-content: center;
 }
 .hlogo {
   margin-top: 45px;
@@ -323,11 +341,20 @@ ul {
 }
 
 .social {
+  width: 206px;
+  height: 80px;
   margin-top: 57px;
   margin-bottom: 57px;
   margin-left: 69px;
-  width: 206px;
 }
+.social-links {
+  margin-top: 20px;
+  display: flex;
+}
+.social-links .item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .right {
   width: 570px;
   height: 86px;
