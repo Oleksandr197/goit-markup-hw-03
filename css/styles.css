@@ -41,6 +41,14 @@ a {
 ul {
   list-style: none;
 }
+a {
+  display: block;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* HEADER */
 
@@ -53,6 +61,7 @@ ul {
 }
 .main-nav {
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   font-style: normal;
@@ -143,7 +152,7 @@ ul {
 .section-hero {
   display: flex;
 
-  background-color: greenyellow;
+  background-color: rgb(34, 235, 16);
 }
 .hero {
   display: flex;
@@ -183,23 +192,20 @@ ul {
 .box {
   display: flex;
   align-items: center;
-  margin-top: 94px;
+  padding-top: 94px;
 }
 .box .item:not(:last-child) {
   margin-right: 30px;
 }
-.block {
-  display: block;
-}
+
 .fon {
-  display: block;
-  width: 270px;
   padding: 25px 100px;
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
 }
 .features-title {
+  width: 270px;
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -211,7 +217,6 @@ ul {
   text-align: start;
 }
 .text {
-  padding-bottom: 3px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -272,8 +277,12 @@ ul {
 .team-box .item:not(:last-child) {
   margin-right: 30px;
 }
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
 .team-title {
-  margin-top: 30px;
+  margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -285,7 +294,7 @@ ul {
   color: var(--secondary-text-color);
 }
 .team-text {
-  margin-top: 10px;
+  margin-bottom: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -297,15 +306,13 @@ ul {
   color: var(--primary-text-color);
 }
 .list-links {
-  margin-top: 16px;
-  margin-bottom: 24px;
   width: 206px;
   display: flex;
   margin-left: 32px;
   margin-right: 32px;
 }
 
-.img {
+.logotype {
   display: block;
   width: 44px;
   height: 44px;
@@ -323,24 +330,25 @@ ul {
 /* <!-- Постоянные клиенты --> */
 .box-client {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .box-client .item:not(:last-child) {
   margin-right: 30px;
 }
-/* Footer */
+
+/* --FOOTER-- */
+
 .footer {
-  height: 290px;
   background-color: #2f303a;
   /*  #2F303A */
 }
 .footer-cont {
+  padding-top: 45px;
+  padding-bottom: 28px;
   display: flex;
-  justify-content: center;
+  align-items: baseline;
 }
 .logo-footer {
-  margin-top: 45px;
-
   width: 153px;
   display: flex;
   font-family: "Raleway", sans-serif;
@@ -360,7 +368,6 @@ ul {
   letter-spacing: 0.03em;
 }
 .footer-white {
-  margin-top: 8px;
   text-align: left;
   color: var(--primary-white);
 }
@@ -379,9 +386,6 @@ ul {
 
 .social {
   width: 206px;
-
-  margin-top: 57px;
-  margin-bottom: 57px;
   margin-left: 69px;
 }
 .social-links {
@@ -392,18 +396,18 @@ ul {
   margin-right: 10px;
 }
 .right {
-  width: 570px;
-  margin-top: 57px;
-  margin-bottom: 57px;
-  margin-left: auto;
-}
-.mail {
   margin-top: 20px;
   display: flex;
 }
+.mail {
+  width: 570px;
+  margin-left: 94px;
+  display: block;
+}
 .button-mail {
   width: 358px;
-  height: 50px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--footer-color);
   border-radius: 4px;
@@ -416,6 +420,7 @@ ul {
 
   /* identical to box height, or 125% */
   letter-spacing: 0.03em;
+  border-radius: 4px;
 
   color: rgba(255, 255, 255, 0.6);
 }
@@ -426,8 +431,8 @@ ul {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  justify-content: center;
-
+  align-items: center;
+  border-radius: 4px;
   background-color: var(--color-changes);
 }
 .button-foot-primary {
@@ -476,8 +481,8 @@ ul {
 
 /* -- Project --  */
 .project {
-  margin-top: 93px;
-  margin-bottom: 94px;
+  padding-top: 93px;
+  padding-bottom: 94px;
 }
 
 .button-filters {
@@ -536,19 +541,23 @@ ul {
   margin: -15px;
   display: flex;
   flex-wrap: wrap;
+  outline: 1px solid red;
 }
 .project-item {
-  width: 370px;
   margin: 15px;
-
-  border: 1px solid#EEEEEE;
-  /* #eeeeee */
+  outline: 1px solid blue;
 }
+
 .project-text {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-left: 1px solid#EEEEEE;
+  border-bottom: 1px solid#EEEEEE;
+  border-right: 1px solid#EEEEEE;
+
+  /* #eeeeee */
 }
 .changes-text {
   display: none;
