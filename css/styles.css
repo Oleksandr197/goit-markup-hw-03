@@ -133,6 +133,7 @@ img {
 }
 
 .address-link {
+  display: flex;
   color: var(--primary-text-color);
 }
 
@@ -541,11 +542,9 @@ img {
   margin: -15px;
   display: flex;
   flex-wrap: wrap;
-  outline: 1px solid red;
 }
 .project-item {
   margin: 15px;
-  outline: 1px solid blue;
 }
 
 .project-text {
